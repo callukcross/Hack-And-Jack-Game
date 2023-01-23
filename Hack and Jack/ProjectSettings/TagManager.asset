@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Art Background
+  - Art Midground
+  - Art Foreground
+  - Buttons
+  - Windows
+  - Message Boxes
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Art Background
+    uniqueID: 981063749
+    locked: 0
+  - name: Art Midground
+    uniqueID: 3514033569
+    locked: 0
+  - name: Art Foreground
+    uniqueID: 2166351125
+    locked: 0
+  - name: Buttons
+    uniqueID: 2152951389
+    locked: 0
+  - name: Windows
+    uniqueID: 3000829243
+    locked: 0
+  - name: Message Boxes
+    uniqueID: 1695222007
+    locked: 0
