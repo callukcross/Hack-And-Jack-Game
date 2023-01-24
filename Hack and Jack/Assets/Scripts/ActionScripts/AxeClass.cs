@@ -29,51 +29,121 @@ public class AxeClass: MonoBehaviour
 
     public void stoneSplitter()
     {
-
+        axeName = "Stone Splitter";
+        power = 0;
+        critMult = 0;
+        critRate = 0;
+        staminaCost = 0;
+        motivationCost = 0;
+        status = 0;
+        axeText.text = "Axe: Stone Splitter";
     }
 
     public void olReliable()
     {
-
+        axeName = "Ol' Reliable";
+        power = 0;
+        critMult = 0;
+        critRate = 0;
+        staminaCost = 0;
+        motivationCost = 0;
+        status = 0;
+        axeText.text = "Axe: Ol' Reliable";
     }
 
     public void ironMike()
     {
-
+        axeName = "Iron Michael";
+        power = 0;
+        critMult = 0;
+        critRate = 0;
+        staminaCost = 0;
+        motivationCost = 0;
+        status = 0;
+        axeText.text = "Axe: Iron Michael";
     }
 
     public void goldDust()
     {
-
+        axeName = "Gold Dust";
+        power = 0;
+        critMult = 0;
+        critRate = 0;
+        staminaCost = 0;
+        motivationCost = 0;
+        status = 0;
+        axeText.text = "Axe: Gold Dust";
     }
 
     public void titaniumToppler()
     {
-
+        axeName = "Titanium Toppler";
+        power = 0;
+        critMult = 0;
+        critRate = 0;
+        staminaCost = 0;
+        motivationCost = 0;
+        status = 0;
+        axeText.text = "Axe: Titanium Toppler";
     }
 
     public void heavyHoward()
     {
-
+        axeName = "Heavy Howard";
+        power = 0;
+        critMult = 0;
+        critRate = 0;
+        staminaCost = 0;
+        motivationCost = 0;
+        status = 0;
+        axeText.text = "Axe: Heavy Howard";
     }
 
     public void endAllBeAll()
     {
-
+        axeName = "End All Be All";
+        power = 0;
+        critMult = 0;
+        critRate = 0;
+        staminaCost = 0;
+        motivationCost = 0;
+        status = 0;
+        axeText.text = "Axe: End All Be All";
     }
 
     public void criticalImpact()
     {
-
+        axeName = "Critical Impact";
+        power = 0;
+        critMult = 0;
+        critRate = 0;
+        staminaCost = 0;
+        motivationCost = 0;
+        status = 0;
+        axeText.text = "Axe: Critical Impact";
     }
 
     public void lumberAbuser()
     {
-
+        axeName = "Lumber Abuser";
+        power = 0;
+        critMult = 0;
+        critRate = 0;
+        staminaCost = 0;
+        motivationCost = 0;
+        status = 0;
+        axeText.text = "Axe: Lumber Abuser";
     }
 
     public void featherweightEdge()
     {
-
+        axeName = "Featherweight Edge";
+        power = 0;
+        critMult = 0;
+        critRate = 0;
+        staminaCost = 0;
+        motivationCost = 0;
+        status = 0;
+        axeText.text = "Axe: Featherweight Edge";
     }
 }
