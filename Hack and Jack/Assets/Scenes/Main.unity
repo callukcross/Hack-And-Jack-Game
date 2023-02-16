@@ -7763,13 +7763,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e505b6fba7f70b34180a8335e9b459a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  daytree: {fileID: 0}
+  messageBoxText: {fileID: 0}
   axeName: 
   power: 0
   critMult: 0
   critRate: 0
   staminaCost: 0
-  motivationCost: 0
-  status: 0
   axeText: {fileID: 2026671870}
 --- !u!114 &1230336974
 MonoBehaviour:
@@ -10482,25 +10483,6 @@ MonoBehaviour:
   player: {fileID: 1230336972}
   daytree: {fileID: 1230336974}
   messageBoxText: {fileID: 2014010932}
-  normalMessage: You spend the day mining away at the nearby cavern and recieve your
-    normal haul.
-  luckyMessage1: You discover a brand new cave system, filled with many fresh veins
-    of minerals, and new experiences to be had!
-  luckyMessage2: You managed to somehow move hundreds of pounds of heavy minerals
-    without hurting yourself!
-  luckyMessage3: A kind old man notices you struggle, and offers you some of his
-    own materials as compensation for your hard work.
-  luckyMessage4: All the minerals today were gathered in one place, making mining
-    today much more efficient!
-  luckyMessage5: While traveling deep into the earth, you find some strange and interesting
-    gear. You decide to take it home!
-  unluckyMessage1: Oh no! As you were leaving the cave, a group of bandits shown
-    up and robbed you!
-  unluckyMessage2: You hurt yourself moving the heavy rocks and minerals today.
-  unluckyMessage3: An earthquake hits, leading to a cave in that you barely escape,
-    ending your mining trip early.
-  unluckyMessage4: Just when you thought you struck it rich and found gold, you later
-    find it was pyrite. Darn fake gold!
 --- !u!4 &1647825419
 Transform:
   m_ObjectHideFlags: 0
@@ -10531,15 +10513,6 @@ MonoBehaviour:
   player: {fileID: 1230336972}
   daytree: {fileID: 1230336974}
   messageBoxText: {fileID: 2014010932}
-  normalMessage: You slept through the night, resting body, mind and soul.
-  luckyMessage1: Your stretches before bed did wonders! You feel extra well rested
-    today!
-  luckyMessage2: You dreamed of mining valuable resources, and approached an epiphany
-    for better mining strategies. You gained +1 Mining!
-  luckyMessage3: Dreams of owning high end axes come to you. Upon waking, you feel
-    motivated to make one yourself! You gained +1 Crafting!
-  luckyMessage4: You discovered a brand new natural hot spring before bed! Let all
-    of your troubles melt away. Your stamina is fully restored!
 --- !u!114 &1647825421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10555,27 +10528,6 @@ MonoBehaviour:
   player: {fileID: 1230336972}
   daytree: {fileID: 1230336974}
   messageBoxText: {fileID: 2014010932}
-  unluckyMessage: The fish don't seem to be active today, and nothing else was happening,
-    leading to a small haul. +12 Stamina!
-  luckyMessage1: A group of miners exit the nearby cave and stop by to chat with
-    you. After a long talk, you learned some caving advice. +12 Stamina! +1 Mining!
-  luckyMessage2: A blacksmith from the local town starts working on a bench not far.
-    After striking up a conversation, you chat about your craft and learn something
-    new. +12 Stamina! +1 Crafting!
-  luckyMessage3: After some time, you hit the big one! After a long struggle, you
-    pull up a giant carp! It made for both a good workout and a good dinner. +12
-    Stamina! +1 Strength!
-  luckyMessage4: The sun is beating down on you hard today. Toughing it out and fishing
-    for dinner really put some hair on your chest. +12 Stamina! Extra Chesthair gain
-    for today!
-  luckyMessage5: Your rod catches on something heavy. Reeling it in, you find there
-    was a mineral caught on your rod! +12 Stamina!
-  luckyMessage6: A nearby boat seemingly drops a cargo shipment by mistake. Looking
-    through it, you find a Lounge Package! Might as well keep it! +12 Stamina! Gained
-    1 Lounge Package!
-  luckyMessage7: A dapper fellow notices you and your wet clothes. Handing you a
-    suitcase, he wishes you the best of luck. Inside, you find a new outfit. +12
-    Stamina! New skin unlocked!
 --- !u!114 &1647825422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10591,14 +10543,6 @@ MonoBehaviour:
   player: {fileID: 1230336972}
   daytree: {fileID: 1230336974}
   messageBoxText: {fileID: 2014010932}
-  normalMessage: You find the nearest boulder and start lifting it. After some quality
-    time with your rock, you feel stronger! +1 Strength!
-  luckyMessage1: Your muscles start to burst as you climb a cliffside with a tree
-    tied to your back, roots and all still attached! +2 Strength!
-  luckyMessage2: You wake up to birds chirping, sunny weather and a gentle breeze.
-    You feel raring and ready to go! You spent only 4 Stamina today! +1 Strength!
-  unluckyMessage: You hear a snap as you benchpress a moose. Your body aches terribly,
-    leading you to end the day early. Double Stamina loss for today. +1 Strength!
 --- !u!1 &1658428380
 GameObject:
   m_ObjectHideFlags: 0
@@ -11707,7 +11651,7 @@ GameObject:
   - component: {fileID: 1942135764}
   - component: {fileID: 1942135763}
   m_Layer: 8
-  m_Name: Text (TMP)
+  m_Name: Practice Crafting Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
