@@ -19,6 +19,7 @@ public class MessageWindowControl : MonoBehaviour
     public Button button10;
     public Button button11;
     public Button button12;
+    public Button button13;
     public float delayTime;
     public transitionPivot currentScreens;
     public GameObject ToMainButton;
@@ -47,6 +48,7 @@ public class MessageWindowControl : MonoBehaviour
         button8.interactable = true;
         button11.interactable = true;
         button12.interactable = true;
+        button13.interactable = true;
     }
 
     IEnumerator delayTimer3()
@@ -81,6 +83,7 @@ public class MessageWindowControl : MonoBehaviour
         button10.interactable = false;
         button11.interactable = false;
         button12.interactable = false;
+        button13.interactable = false;
     }
 
     public void activateButtons()
@@ -97,6 +100,7 @@ public class MessageWindowControl : MonoBehaviour
         button10.interactable = true;
         button11.interactable = true;
         button12.interactable = true;
+        button13.interactable = true;
     }
 
     public void screenTransitionButtonReactivate1()
