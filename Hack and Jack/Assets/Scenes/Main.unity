@@ -2342,8 +2342,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1647825423}
-        m_TargetAssemblyTypeName: AxeClass, Assembly-CSharp
+      - m_Target: {fileID: 1647825424}
+        m_TargetAssemblyTypeName: PracticeCrafting, Assembly-CSharp
         m_MethodName: playPracticeCraftEvent
         m_Mode: 1
         m_Arguments:
@@ -8019,7 +8019,7 @@ GameObject:
   - component: {fileID: 1230336969}
   - component: {fileID: 1230336972}
   - component: {fileID: 1230336974}
-  - component: {fileID: 1230336973}
+  - component: {fileID: 1230336975}
   m_Layer: 0
   m_Name: SystemFlagsAndVariables
   m_TagString: Untagged
@@ -8056,7 +8056,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1230336972
 MonoBehaviour:
@@ -8081,6 +8081,7 @@ MonoBehaviour:
   gold: 0
   titanium: 0
   chesthair: 1
+  axeIndex: 0
   strengthText: {fileID: 585149838}
   staminaText: {fileID: 1469498662}
   miningText: {fileID: 851931535}
@@ -8091,29 +8092,6 @@ MonoBehaviour:
   ironText: {fileID: 1658428382}
   goldText: {fileID: 945962880}
   titaniumText: {fileID: 50966609}
---- !u!114 &1230336973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1230336968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e505b6fba7f70b34180a8335e9b459a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  daytree: {fileID: 0}
-  messageBoxText: {fileID: 0}
-  axeName: 
-  power: 0
-  critMult: 0
-  critRate: 0
-  staminaCost: 0
-  eventMarker: 0
-  VS: {fileID: 0}
-  axeText: {fileID: 2026671870}
 --- !u!114 &1230336974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8131,6 +8109,27 @@ MonoBehaviour:
   maxTreeHP: 0
   dayText: {fileID: 1061529358}
   treeHPText: {fileID: 1807111852}
+--- !u!114 &1230336975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230336968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e505b6fba7f70b34180a8335e9b459a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1230336972}
+  daytree: {fileID: 1230336974}
+  messageBoxText: {fileID: 2014010932}
+  axeName: 
+  power: 0
+  critMult: 0
+  critRate: 0
+  staminaCost: 0
+  axeText: {fileID: 2026671870}
 --- !u!1 &1235139091
 GameObject:
   m_ObjectHideFlags: 0
@@ -8633,7 +8632,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1328786876
 GameObject:
@@ -10810,7 +10809,7 @@ GameObject:
   - component: {fileID: 1647825421}
   - component: {fileID: 1647825422}
   - component: {fileID: 1647825420}
-  - component: {fileID: 1647825423}
+  - component: {fileID: 1647825424}
   m_Layer: 0
   m_Name: Actions
   m_TagString: Untagged
@@ -10846,7 +10845,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1647825420
 MonoBehaviour:
@@ -10893,7 +10892,7 @@ MonoBehaviour:
   player: {fileID: 1230336972}
   daytree: {fileID: 1230336974}
   messageBoxText: {fileID: 2014010932}
---- !u!114 &1647825423
+--- !u!114 &1647825424
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10902,20 +10901,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1647825417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e505b6fba7f70b34180a8335e9b459a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 3878df1638aad354080a284c0e788e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1230336972}
   daytree: {fileID: 1230336974}
   messageBoxText: {fileID: 2014010932}
-  axeName: 
-  power: 0
-  critMult: 0
-  critRate: 0
-  staminaCost: 0
   eventMarker: 0
   VS: {fileID: 856078961}
-  axeText: {fileID: 0}
 --- !u!1 &1658428380
 GameObject:
   m_ObjectHideFlags: 0

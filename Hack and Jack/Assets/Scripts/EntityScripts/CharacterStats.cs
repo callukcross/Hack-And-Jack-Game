@@ -17,6 +17,8 @@ public class CharacterStats : MonoBehaviour
     public int gold;
     public int titanium;
     public int chesthair;
+    public int axeIndex;    //value to keep track of which axe object is equipped.
+
 
     //player stat textboxes
     public TextMeshProUGUI strengthText;
@@ -42,6 +44,8 @@ public class CharacterStats : MonoBehaviour
         goldText.text = "Gold: " + gold.ToString();
         titaniumText.text = "Titanium: " + titanium.ToString();
         chesthairText.text = "Chesthair: Bare";
+        axeIndex = 0;
+
     }
 
     public void updateCharacterStats()
