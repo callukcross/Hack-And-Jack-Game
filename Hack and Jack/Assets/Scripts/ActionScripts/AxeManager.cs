@@ -47,14 +47,26 @@ public class AxeManager : MonoBehaviour
         Axes stonesplitter = new Axes("Stone Splitter", 5, 2, 10, 20, false, 1);   //create axe object
         Axes temp = axeList.Find((x) => x.axeID == 1);     //create a dummy axe object to detect if the above object is already in the list or not
 
-        if(temp == null)
+        if(temp == null)    //use when object hasnt been crafted yet
         {
-            Debug.Log("No");
-            axeList.Add(stonesplitter);     //If object is not in list, add to list.
+            if(player.stone >= 9 && player.crafting >= 1)   //Checks the player meets the material and stat requirements
+            {
+                player.stone -= 9;      //subtract the materials needed
+                if(player.stone < 0)    //a cautionary check to make sure material value doesn't drop below 0
+                {
+                    player.stone = 0;
+                }
+                axeList.Add(stonesplitter);     //If object is not in list, add to list.
+                messageBoxText.text = "You crafted the Stone Splitter!"; //message that crafting was successful.
+            }
+            else   //plays if the player doesn't meet requirements to craft object
+            {
+                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+            }
         }
-        else if(temp != null)
+        else if(temp != null)   //use when object has already been crafted
         {
-            Debug.Log("Yes");
+            return;
         }
     }
 
@@ -65,12 +77,29 @@ public class AxeManager : MonoBehaviour
 
         if (temp == null)
         {
-            Debug.Log("No");
-            axeList.Add(olreliable);
+            if(player.stone >= 12 && player.copper >= 4 && player.crafting >= 3)
+            {
+                player.stone -= 12;
+                player.copper -= 4;
+                if(player.stone < 0)
+                {
+                    player.stone = 0;
+                }
+                if(player.copper < 0)
+                {
+                    player.copper = 0;
+                }
+                axeList.Add(olreliable);
+                messageBoxText.text = "You crafted Ol' Reliable!";
+            }
+            else
+            {
+                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+            }
         }
         else if (temp != null)
         {
-            Debug.Log("Yes");
+            return;
         }
     }
 
@@ -81,12 +110,34 @@ public class AxeManager : MonoBehaviour
 
         if (temp == null)
         {
-            Debug.Log("No");
-            axeList.Add(ironmichael);
+            if(player.stone >= 20 && player.copper >= 10 && player.iron >= 6 && player.crafting >= 6)
+            {
+                player.stone -= 20;
+                player.copper -= 10;
+                player.iron -= 6;
+                if(player.stone < 0)
+                {
+                    player.stone = 0;
+                }
+                if(player.copper < 0)
+                {
+                    player.copper = 0;
+                }
+                if(player.iron < 0)
+                {
+                    player.iron = 0;
+                }
+                axeList.Add(ironmichael);
+                messageBoxText.text = "You crafted the Iron Michael!";
+            }
+            else
+            {
+                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+            }
         }
         else if (temp != null)
         {
-            Debug.Log("Yes");
+            return;
         }
     }
 
@@ -97,12 +148,39 @@ public class AxeManager : MonoBehaviour
 
         if (temp == null)
         {
-            Debug.Log("No");
-            axeList.Add(golddust);
+            if(player.stone >= 26 && player.copper >= 12 && player.iron >= 9 && player.gold >= 3 && player.crafting >= 10)
+            {
+                player.stone -= 26;
+                player.copper -= 12;
+                player.iron -= 9;
+                player.gold -= 3;
+                if (player.stone < 0)
+                {
+                    player.stone = 0;
+                }
+                if (player.copper < 0)
+                {
+                    player.copper = 0;
+                }
+                if (player.iron < 0)
+                {
+                    player.iron = 0;
+                }
+                if(player.gold < 0)
+                {
+                    player.gold = 0;
+                }
+                axeList.Add(golddust);
+                messageBoxText.text = "You crafted the Gold Dust!";
+            }
+            else
+            {
+                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+            }
         }
         else if (temp != null)
         {
-            Debug.Log("Yes");
+            return;
         }
     }
 
@@ -113,12 +191,44 @@ public class AxeManager : MonoBehaviour
 
         if (temp == null)
         {
-            Debug.Log("No");
-            axeList.Add(titaniumtoppler);
+            if(player.stone >= 34 && player.copper >= 15 && player.iron >= 12 && player.gold >= 9 && player.titanium >= 3 && player.crafting >= 12)
+            {
+                player.stone -= 34;
+                player.copper -= 15;
+                player.iron -= 12;
+                player.gold -= 9;
+                player.titanium -= 3;
+                if (player.stone < 0)
+                {
+                    player.stone = 0;
+                }
+                if (player.copper < 0)
+                {
+                    player.copper = 0;
+                }
+                if (player.iron < 0)
+                {
+                    player.iron = 0;
+                }
+                if (player.gold < 0)
+                {
+                    player.gold = 0;
+                }
+                if(player.titanium < 0)
+                {
+                    player.titanium = 0;
+                }
+                axeList.Add(titaniumtoppler);
+                messageBoxText.text = "You crafted the Titanium Toppler!";
+            }
+            else
+            {
+                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+            }
         }
         else if (temp != null)
         {
-            Debug.Log("Yes");
+            return;
         }
     }
 
@@ -129,12 +239,44 @@ public class AxeManager : MonoBehaviour
 
         if (temp == null)
         {
-            Debug.Log("No");
-            axeList.Add(heavyhoward);
+            if(player.stone >= 48 && player.copper >= 30 && player.iron >= 22 && player.gold >= 14 && player.titanium >= 9 && player.crafting >= 12 && player.strength >= 15)
+            {
+                player.stone -= 48;
+                player.copper -= 30;
+                player.iron -= 22;
+                player.gold -= 14;
+                player.titanium -= 9;
+                if (player.stone < 0)
+                {
+                    player.stone = 0;
+                }
+                if (player.copper < 0)
+                {
+                    player.copper = 0;
+                }
+                if (player.iron < 0)
+                {
+                    player.iron = 0;
+                }
+                if (player.gold < 0)
+                {
+                    player.gold = 0;
+                }
+                if (player.titanium < 0)
+                {
+                    player.titanium = 0;
+                }
+                axeList.Add(heavyhoward);
+                messageBoxText.text = "You crafted the Heavy Howard!";
+            }
+            else
+            {
+                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+            }
         }
         else if (temp != null)
         {
-            Debug.Log("Yes");
+            return;
         }
     }
 
@@ -144,12 +286,44 @@ public class AxeManager : MonoBehaviour
         Axes temp = axeList.Find((x) => x.axeID == 7);
         if (temp == null)
         {
-            Debug.Log("No");
-            axeList.Add(endallbeall);
+            if (player.stone >= 80 && player.copper >= 67 && player.iron >= 55 && player.gold >= 35 && player.titanium >= 23 && player.crafting >= 28)
+            {
+                player.stone -= 80;
+                player.copper -= 67;
+                player.iron -= 55;
+                player.gold -= 35;
+                player.titanium -= 23;
+                if (player.stone < 0)
+                {
+                    player.stone = 0;
+                }
+                if (player.copper < 0)
+                {
+                    player.copper = 0;
+                }
+                if (player.iron < 0)
+                {
+                    player.iron = 0;
+                }
+                if (player.gold < 0)
+                {
+                    player.gold = 0;
+                }
+                if (player.titanium < 0)
+                {
+                    player.titanium = 0;
+                }
+                axeList.Add(endallbeall);
+                messageBoxText.text = "You crafted the End All Be All!";
+            }
+            else
+            {
+                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+            }
         }
         else if (temp != null)
         {
-            Debug.Log("Yes");
+            return;
         }
     }
 
@@ -160,12 +334,34 @@ public class AxeManager : MonoBehaviour
 
         if (temp == null)
         {
-            Debug.Log("No");
-            axeList.Add(criticalimpact);
+            if(player.iron >= 60 && player.gold >= 40 && player.titanium >= 20 && player.crafting >= 22 && player.strength >= 10)
+            {
+                player.iron -= 60;
+                player.gold -= 40;
+                player.titanium -= 20;
+                if(player.iron < 0)
+                {
+                    player.iron = 0;
+                }
+                if(player.gold < 0)
+                {
+                    player.gold = 0;
+                }
+                if(player.titanium < 0)
+                {
+                    player.titanium = 0;
+                }
+                axeList.Add(criticalimpact);
+                messageBoxText.text = "You crafted the Critical Impact!";
+            }
+            else
+            {
+                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+            }
         }
         else if (temp != null)
         {
-            Debug.Log("Yes");
+            return;
         }
     }
 
@@ -176,12 +372,29 @@ public class AxeManager : MonoBehaviour
 
         if (temp == null)
         {
-            Debug.Log("No");
-            axeList.Add(lumberabuser);
+            if(player.copper >= 75 && player.iron >= 5 && player.crafting >= 16)
+            {
+                player.copper -= 75;
+                player.iron -= 5;
+                if(player.copper < 0)
+                {
+                    player.copper = 0;
+                }
+                if(player.iron < 0)
+                {
+                    player.iron = 0;
+                }
+                axeList.Add(lumberabuser);
+                messageBoxText.text = "You crafted the Lumber Abuser!";
+            }
+            else
+            {
+                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+            }
         }
         else if (temp != null)
         {
-            Debug.Log("Yes");
+            return;
         }
     }
 
@@ -192,12 +405,34 @@ public class AxeManager : MonoBehaviour
 
         if (temp == null)
         {
-            Debug.Log("No");
-            axeList.Add(featherweightedge);
+            if(player.iron >= 2 && player.gold >= 2 && player.titanium >= 3 && player.crafting >= 18)
+            {
+                player.iron -= 2;
+                player.gold -= 2;
+                player.titanium -= 3;
+                if(player.iron < 0)
+                {
+                    player.iron = 0;
+                }
+                if(player.gold < 0)
+                {
+                    player.gold = 0;
+                }
+                if(player.titanium < 0)
+                {
+                    player.titanium = 0;
+                }
+                axeList.Add(featherweightedge);
+                messageBoxText.text = "You crafted the Featherweight Edge!";
+            }
+            else
+            {
+                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+            }
         }
         else if (temp != null)
         {
-            Debug.Log("Yes");
+            return;
         }
     }
 
@@ -211,12 +446,44 @@ public class AxeManager : MonoBehaviour
 
         if (temp == null)
         {
-            Debug.Log("No");
-            axeList.Add(victoryssecret);
+            if (player.stone >= 30 && player.copper >= 30 && player.iron >= 30 && player.gold >= 30 && player.titanium >= 30 && player.crafting >= 1 && player.chesthair >= 30)
+            {
+                player.stone -= 30;
+                player.copper -= 30;
+                player.iron -= 30;
+                player.gold -= 30;
+                player.titanium -= 30;
+                if (player.stone < 0)
+                {
+                    player.stone = 0;
+                }
+                if (player.copper < 0)
+                {
+                    player.copper = 0;
+                }
+                if (player.iron < 0)
+                {
+                    player.iron = 0;
+                }
+                if (player.gold < 0)
+                {
+                    player.gold = 0;
+                }
+                if (player.titanium < 0)
+                {
+                    player.titanium = 0;
+                }
+                axeList.Add(victoryssecret);
+                messageBoxText.text = "You crafted Victory's Secret!";
+            }
+            else
+            {
+                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+            }
         }
         else if (temp != null)
         {
-            Debug.Log("Yes");
+            return;
         }
     }
 }
