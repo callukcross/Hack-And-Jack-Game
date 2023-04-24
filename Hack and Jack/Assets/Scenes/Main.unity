@@ -8124,12 +8124,7 @@ MonoBehaviour:
   player: {fileID: 1230336972}
   daytree: {fileID: 1230336974}
   messageBoxText: {fileID: 2014010932}
-  axeName: 
-  power: 0
-  critMult: 0
-  critRate: 0
-  staminaCost: 0
-  axeText: {fileID: 2026671870}
+  axeList: []
 --- !u!1 &1235139091
 GameObject:
   m_ObjectHideFlags: 0
