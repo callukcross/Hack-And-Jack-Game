@@ -17,7 +17,7 @@ public class CharacterStats : MonoBehaviour
     public int gold;
     public int titanium;
     public int chesthair;
-    public int axeIndex;    //value to keep track of which axe object is equipped.
+    public AxeManager equippedAxe;
 
 
     //player stat textboxes
@@ -26,6 +26,7 @@ public class CharacterStats : MonoBehaviour
     public TextMeshProUGUI miningText;
     public TextMeshProUGUI craftingText;
     public TextMeshProUGUI chesthairText;
+    public TextMeshProUGUI axeText;
     public TextMeshProUGUI stoneText;
     public TextMeshProUGUI copperText;
     public TextMeshProUGUI ironText;
@@ -34,6 +35,7 @@ public class CharacterStats : MonoBehaviour
 
     void Start()
     {
+        //note: axe text is initialized in the start function of the axemanager script
         strengthText.text = "Strength: " + strength.ToString();
         staminaText.text = "Stamina: " + stamina.ToString() + "%";
         miningText.text = "Mining: " + mining.ToString();
@@ -44,8 +46,6 @@ public class CharacterStats : MonoBehaviour
         goldText.text = "Gold: " + gold.ToString();
         titaniumText.text = "Titanium: " + titanium.ToString();
         chesthairText.text = "Chesthair: Bare";
-        axeIndex = 0;
-
     }
 
     public void updateCharacterStats()
@@ -59,6 +59,8 @@ public class CharacterStats : MonoBehaviour
         ironText.text = "Iron: " + iron.ToString();
         goldText.text = "Gold: " + gold.ToString();
         titaniumText.text = "Titanium: " + titanium.ToString();
+
+
 
         if (chesthair <= 7)
         {

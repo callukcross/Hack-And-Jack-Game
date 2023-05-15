@@ -579,30 +579,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: gameWindowEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: deactivateButtons
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &57437456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1226,30 +1202,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1230336975}
         m_TargetAssemblyTypeName: AxeManager, Assembly-CSharp
         m_MethodName: craftHeavyHoward
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: gameWindowEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: deactivateButtons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4857,30 +4809,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: gameWindowEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: deactivateButtons
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &834765357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5282,30 +5210,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1230336975}
         m_TargetAssemblyTypeName: AxeManager, Assembly-CSharp
         m_MethodName: craftVictorysSecret
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: gameWindowEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: deactivateButtons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6378,30 +6282,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: gameWindowEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: deactivateButtons
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1002267284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7413,12 +7293,13 @@ MonoBehaviour:
   gold: 0
   titanium: 0
   chesthair: 1
-  axeIndex: 0
+  equippedAxe: {fileID: 1230336975}
   strengthText: {fileID: 585149838}
   staminaText: {fileID: 1469498662}
   miningText: {fileID: 851931535}
   craftingText: {fileID: 94362768}
   chesthairText: {fileID: 1457909060}
+  axeText: {fileID: 2026671870}
   stoneText: {fileID: 1367130724}
   copperText: {fileID: 532255252}
   ironText: {fileID: 1658428382}
@@ -7721,30 +7602,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1230336975}
         m_TargetAssemblyTypeName: AxeManager, Assembly-CSharp
         m_MethodName: craftOlReliable
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: gameWindowEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: deactivateButtons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8490,30 +8347,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: gameWindowEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: deactivateButtons
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1386806547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9050,30 +8883,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1230336975}
         m_TargetAssemblyTypeName: AxeManager, Assembly-CSharp
         m_MethodName: craftCriticalImpact
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: gameWindowEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: deactivateButtons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11220,30 +11029,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: gameWindowEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: deactivateButtons
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1922764076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11873,30 +11658,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: gameWindowEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: deactivateButtons
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &2065906041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12022,30 +11783,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1230336975}
         m_TargetAssemblyTypeName: AxeManager, Assembly-CSharp
         m_MethodName: craftFeatherweightEdge
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: gameWindowEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230336976}
-        m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
-        m_MethodName: deactivateButtons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

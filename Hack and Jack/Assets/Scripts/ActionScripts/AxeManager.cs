@@ -6,12 +6,12 @@ using UnityEngine;
 [System.Serializable]
 public class Axes
 {
-    public string axeName;             //axe name
+    public string axeName;           //axe name
     public int power;               //axe power
     public float critMult;            //axe critical damage multiplier
     public float critRate;            //axe critical hit rate %
     public int staminaCost;         //stamina cost to use axe
-    public bool isEquipped;         //equip status (0 = not equipped, 1 = equipped)
+    public bool isEquipped;         //equip status (false = not equipped, true = equipped)
     public int axeID;               //identification number for each axe object in list
 
     //Constructor to initiate the list - prevents 'object reference not set to instance' error
@@ -37,9 +37,21 @@ public class AxeManager : MonoBehaviour
 
     void Start()
     {
-        //add the Wooden Axe as the starting axe for the game. Adds a bool of the same location number to track if locked - on default, false, not locked
+        //add the Wooden Axe as the starting axe for the game.
         Axes woodenaxe = new Axes("Wooden Axe", 3, 2, 10, 20, true, 0);
         axeList.Add(woodenaxe);
+        player.axeText.text = "Axe: " + axeList[0].axeName;
+    }
+
+    public void equipAxe(Axes equippedAxe)    //function to equip an axe
+    {
+        for(int i = 0; i < axeList.Count; i++)      //turns all axes in the list to unequipped first
+        {
+            axeList[i].isEquipped = false;
+        }
+
+        axeList[axeList.FindIndex(Axes => Axes.axeID == equippedAxe.axeID)].isEquipped = true;  //finds the index of the equipped axe and sets it to be equipped
+        player.axeText.text = "Axe: " + equippedAxe.axeName;    //changes equip text
     }
 
     public void craftStoneSplitter()
@@ -57,16 +69,16 @@ public class AxeManager : MonoBehaviour
                     player.stone = 0;
                 }
                 axeList.Add(stonesplitter);     //If object is not in list, add to list.
-                messageBoxText.text = "You crafted the Stone Splitter!"; //message that crafting was successful.
+                Debug.Log("You crafted the Stone Splitter!");   //message that crafting was successful, change later!!!!!
             }
             else   //plays if the player doesn't meet requirements to craft object
             {
-                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+                Debug.Log("You don't have enough materials, or the right stat requirements to craft this item!"); // change later!!!!!
             }
         }
-        else if(temp != null)   //use when object has already been crafted
+        else if(temp != null)   //when axe is already crafted, plays this function instead - calls and uses the equip axe function
         {
-            return;
+            equipAxe(stonesplitter);
         }
     }
 
@@ -90,16 +102,16 @@ public class AxeManager : MonoBehaviour
                     player.copper = 0;
                 }
                 axeList.Add(olreliable);
-                messageBoxText.text = "You crafted Ol' Reliable!";
+                Debug.Log("You crafted Ol' Reliable!");
             }
             else
             {
-                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+                Debug.Log("You don't have enough materials, or the right stat requirements to craft this item!");
             }
         }
         else if (temp != null)
         {
-            return;
+            equipAxe(olreliable);
         }
     }
 
@@ -128,16 +140,16 @@ public class AxeManager : MonoBehaviour
                     player.iron = 0;
                 }
                 axeList.Add(ironmichael);
-                messageBoxText.text = "You crafted the Iron Michael!";
+                Debug.Log("You crafted the Iron Michael!");
             }
             else
             {
-                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+                Debug.Log("You don't have enough materials, or the right stat requirements to craft this item!");
             }
         }
         else if (temp != null)
         {
-            return;
+            equipAxe(ironmichael);
         }
     }
 
@@ -171,16 +183,16 @@ public class AxeManager : MonoBehaviour
                     player.gold = 0;
                 }
                 axeList.Add(golddust);
-                messageBoxText.text = "You crafted the Gold Dust!";
+                Debug.Log("You crafted the Gold Dust!");
             }
             else
             {
-                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+                Debug.Log("You don't have enough materials, or the right stat requirements to craft this item!");
             }
         }
         else if (temp != null)
         {
-            return;
+            equipAxe(golddust);
         }
     }
 
@@ -219,16 +231,16 @@ public class AxeManager : MonoBehaviour
                     player.titanium = 0;
                 }
                 axeList.Add(titaniumtoppler);
-                messageBoxText.text = "You crafted the Titanium Toppler!";
+                Debug.Log("You crafted the Titanium Toppler!");
             }
             else
             {
-                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+                Debug.Log("You don't have enough materials, or the right stat requirements to craft this item!");
             }
         }
         else if (temp != null)
         {
-            return;
+            equipAxe(titaniumtoppler);
         }
     }
 
@@ -267,16 +279,16 @@ public class AxeManager : MonoBehaviour
                     player.titanium = 0;
                 }
                 axeList.Add(heavyhoward);
-                messageBoxText.text = "You crafted the Heavy Howard!";
+                Debug.Log("You crafted the Heavy Howard!");
             }
             else
             {
-                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+                Debug.Log("You don't have enough materials, or the right stat requirements to craft this item!");
             }
         }
         else if (temp != null)
         {
-            return;
+            equipAxe(heavyhoward);
         }
     }
 
@@ -314,16 +326,16 @@ public class AxeManager : MonoBehaviour
                     player.titanium = 0;
                 }
                 axeList.Add(endallbeall);
-                messageBoxText.text = "You crafted the End All Be All!";
+                Debug.Log("You crafted The End All Be All!");
             }
             else
             {
-                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+                Debug.Log("You don't have enough materials, or the right stat requirements to craft this item!");
             }
         }
         else if (temp != null)
         {
-            return;
+            equipAxe(endallbeall);
         }
     }
 
@@ -352,16 +364,16 @@ public class AxeManager : MonoBehaviour
                     player.titanium = 0;
                 }
                 axeList.Add(criticalimpact);
-                messageBoxText.text = "You crafted the Critical Impact!";
+                Debug.Log("You crafted the Critical Impact!");
             }
             else
             {
-                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+                Debug.Log("You don't have enough materials, or the right stat requirements to craft this item!");
             }
         }
         else if (temp != null)
         {
-            return;
+            equipAxe(criticalimpact);
         }
     }
 
@@ -385,16 +397,16 @@ public class AxeManager : MonoBehaviour
                     player.iron = 0;
                 }
                 axeList.Add(lumberabuser);
-                messageBoxText.text = "You crafted the Lumber Abuser!";
+                Debug.Log("You crafted the Lumber Abuser!");
             }
             else
             {
-                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+                Debug.Log("You don't have enough materials, or the right stat requirements to craft this item!");
             }
         }
         else if (temp != null)
         {
-            return;
+            equipAxe(lumberabuser);
         }
     }
 
@@ -423,16 +435,16 @@ public class AxeManager : MonoBehaviour
                     player.titanium = 0;
                 }
                 axeList.Add(featherweightedge);
-                messageBoxText.text = "You crafted the Featherweight Edge!";
+                Debug.Log("You crafted the Featherweight Edge!");
             }
             else
             {
-                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+                Debug.Log("You don't have enough materials, or the right stat requirements to craft this item!");
             }
         }
         else if (temp != null)
         {
-            return;
+            equipAxe(featherweightedge);
         }
     }
 
@@ -474,16 +486,16 @@ public class AxeManager : MonoBehaviour
                     player.titanium = 0;
                 }
                 axeList.Add(victoryssecret);
-                messageBoxText.text = "You crafted Victory's Secret!";
+                Debug.Log("You crafted Victory's Secret!");
             }
             else
             {
-                messageBoxText.text = "You don't have enough materials, or the right stat requirements to craft this item!";
+                Debug.Log("You don't have enough materials, or the right stat requirements to craft this item!");
             }
         }
         else if (temp != null)
         {
-            return;
+            equipAxe(victoryssecret);
         }
     }
 }
