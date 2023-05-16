@@ -7337,6 +7337,18 @@ MonoBehaviour:
   player: {fileID: 1230336972}
   daytree: {fileID: 1230336974}
   messageBoxText: {fileID: 2014010932}
+  AxeButtons:
+  - {fileID: 1922764075}
+  - {fileID: 1261705733}
+  - {fileID: 1002267283}
+  - {fileID: 2065906040}
+  - {fileID: 1386806546}
+  - {fileID: 129628885}
+  - {fileID: 57437455}
+  - {fileID: 1465678701}
+  - {fileID: 834765356}
+  - {fileID: 2115934389}
+  - {fileID: 856078963}
   axeList: []
 --- !u!114 &1230336976
 MonoBehaviour:

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class Axes
@@ -33,6 +34,8 @@ public class AxeManager : MonoBehaviour
     public NonCharacterStats daytree; // references the nonplayer stats
     public TextMeshProUGUI messageBoxText; // references the message box
 
+    public Button[] AxeButtons = new Button[11];
+
     public List<Axes> axeList = new List<Axes>();       //create List for Axe Objects to be stored into
 
     void Start()
@@ -50,8 +53,15 @@ public class AxeManager : MonoBehaviour
             axeList[i].isEquipped = false;
         }
 
+        for(int i = 0; i < 11; i++)   // turns the button UI for all axe buttons white to show they're unequipped
+        {
+            AxeButtons[i].image.color = Color.white;
+        }
+
         axeList[axeList.FindIndex(Axes => Axes.axeID == equippedAxe.axeID)].isEquipped = true;  //finds the index of the equipped axe and sets it to be equipped
         player.axeText.text = "Axe: " + equippedAxe.axeName;    //changes equip text
+        AxeButtons[equippedAxe.axeID - 1].image.color = Color.yellow;   //changes the equipped axe's button UI to yellow to show it is equipped
+
     }
 
     public void craftStoneSplitter()
@@ -69,6 +79,7 @@ public class AxeManager : MonoBehaviour
                     player.stone = 0;
                 }
                 axeList.Add(stonesplitter);     //If object is not in list, add to list.
+                AxeButtons[0].image.color = Color.white;    // Changes the Button UI to be white, showing that the axe is unlocked
                 Debug.Log("You crafted the Stone Splitter!");   //message that crafting was successful, change later!!!!!
             }
             else   //plays if the player doesn't meet requirements to craft object
@@ -102,6 +113,7 @@ public class AxeManager : MonoBehaviour
                     player.copper = 0;
                 }
                 axeList.Add(olreliable);
+                AxeButtons[1].image.color = Color.white;
                 Debug.Log("You crafted Ol' Reliable!");
             }
             else
@@ -140,6 +152,7 @@ public class AxeManager : MonoBehaviour
                     player.iron = 0;
                 }
                 axeList.Add(ironmichael);
+                AxeButtons[2].image.color = Color.white;
                 Debug.Log("You crafted the Iron Michael!");
             }
             else
@@ -183,6 +196,7 @@ public class AxeManager : MonoBehaviour
                     player.gold = 0;
                 }
                 axeList.Add(golddust);
+                AxeButtons[3].image.color = Color.white;
                 Debug.Log("You crafted the Gold Dust!");
             }
             else
@@ -231,6 +245,7 @@ public class AxeManager : MonoBehaviour
                     player.titanium = 0;
                 }
                 axeList.Add(titaniumtoppler);
+                AxeButtons[4].image.color = Color.white;
                 Debug.Log("You crafted the Titanium Toppler!");
             }
             else
@@ -279,6 +294,7 @@ public class AxeManager : MonoBehaviour
                     player.titanium = 0;
                 }
                 axeList.Add(heavyhoward);
+                AxeButtons[5].image.color = Color.white;
                 Debug.Log("You crafted the Heavy Howard!");
             }
             else
@@ -326,6 +342,7 @@ public class AxeManager : MonoBehaviour
                     player.titanium = 0;
                 }
                 axeList.Add(endallbeall);
+                AxeButtons[6].image.color = Color.white;
                 Debug.Log("You crafted The End All Be All!");
             }
             else
@@ -364,6 +381,7 @@ public class AxeManager : MonoBehaviour
                     player.titanium = 0;
                 }
                 axeList.Add(criticalimpact);
+                AxeButtons[7].image.color = Color.white;
                 Debug.Log("You crafted the Critical Impact!");
             }
             else
@@ -397,6 +415,7 @@ public class AxeManager : MonoBehaviour
                     player.iron = 0;
                 }
                 axeList.Add(lumberabuser);
+                AxeButtons[8].image.color = Color.white;
                 Debug.Log("You crafted the Lumber Abuser!");
             }
             else
@@ -435,6 +454,7 @@ public class AxeManager : MonoBehaviour
                     player.titanium = 0;
                 }
                 axeList.Add(featherweightedge);
+                AxeButtons[9].image.color = Color.white;
                 Debug.Log("You crafted the Featherweight Edge!");
             }
             else
@@ -486,6 +506,7 @@ public class AxeManager : MonoBehaviour
                     player.titanium = 0;
                 }
                 axeList.Add(victoryssecret);
+                AxeButtons[10].image.color = Color.white;
                 Debug.Log("You crafted Victory's Secret!");
             }
             else

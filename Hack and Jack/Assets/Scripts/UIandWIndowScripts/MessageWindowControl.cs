@@ -20,6 +20,7 @@ public class MessageWindowControl : MonoBehaviour
     public Button button11;
     public Button button12;
     public Button button13;
+
     public float delayTime;
     public transitionPivot currentScreens;
     public GameObject ToMainButton;
