@@ -380,6 +380,13 @@ public class AxeManager : MonoBehaviour
                 {
                     player.titanium = 0;
                 }
+
+                criticalimpact.critRate = 10 + player.strength; //adds strength stat to base crit rate
+                if(criticalimpact.critRate > 100)   //prevents crit rate from going above 100%
+                {
+                    criticalimpact.critRate = 100;
+                }
+
                 axeList.Add(criticalimpact);
                 AxeButtons[7].image.color = Color.white;
                 Debug.Log("You crafted the Critical Impact!");
