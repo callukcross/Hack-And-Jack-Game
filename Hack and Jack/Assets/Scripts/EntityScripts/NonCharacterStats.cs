@@ -6,8 +6,8 @@ using UnityEngine;
 public class NonCharacterStats : MonoBehaviour
 {
     public int day;
-    public float currentTreeHP;
-    public float maxTreeHP;
+    public double currentTreeHP;
+    public double maxTreeHP;
 
     public TextMeshProUGUI dayText;
     public TextMeshProUGUI treeHPText;
