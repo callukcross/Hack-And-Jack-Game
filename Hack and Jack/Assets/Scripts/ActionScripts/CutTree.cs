@@ -9,6 +9,7 @@ public class CutTree : MonoBehaviour
     public CharacterStats player; //references the player stats
     public AxeManager currentAxe;  //references the currently equipped axe
     public NonCharacterStats daytree; // references the nonplayer stats
+    public MessageWindowControl messageBox; // references the message window
     public TextMeshProUGUI messageBoxText; // references the message box
 
     int find;   // a dummy variable used to help find the index of the currently equipped axe
@@ -92,14 +93,23 @@ public class CutTree : MonoBehaviour
         }
 
         daytree.currentTreeHP -= finalDamage;   //inflict damage to tree equal to final damage calculated
-        if(daytree.currentTreeHP >= 0)
+
+        if(daytree.currentTreeHP < 0)
         {
             daytree.currentTreeHP = 0;
         }
     }
 
-    public void gameEnd()   //event that plays to end game when tree health becomes 0
+    public void gameEnd()
     {
-
+        if(daytree.currentTreeHP <= 0)
+        {
+            messageBoxText.text = "The tree has been felled! Congratulations Lumberjack! This feat took you " + daytree.day.ToString() + " days to complete!";
+            messageBox.gameWindowEnter();
+        }
+        else
+        {
+            return;
+        }
     }
 }
