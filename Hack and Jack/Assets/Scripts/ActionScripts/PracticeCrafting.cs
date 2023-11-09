@@ -105,12 +105,14 @@ public class PracticeCrafting : MonoBehaviour
             messageBoxText.text = normalMessage2;
         }
         player.crafting++;
+        daytree.day++;
     }
 
     public void lucky1()
     {
         messageBoxText.text = luckyMessage1;
         player.crafting += 2;
+        daytree.day++;
     }
 
     public void lucky2()
@@ -133,12 +135,14 @@ public class PracticeCrafting : MonoBehaviour
                 break;
         }
         player.crafting += 2;
+        daytree.day++;
     }
 
     public void lucky3()
     {
         messageBoxText.text = luckyMessage3;
         player.crafting += 2;
+        daytree.day++;
         VS.SetActive(true);
     }
 }
