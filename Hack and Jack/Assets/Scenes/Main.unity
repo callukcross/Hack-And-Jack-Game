@@ -711,6 +711,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1230336977}
+        m_TargetAssemblyTypeName: DeactivateButtons, Assembly-CSharp
+        m_MethodName: deactivateActions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1647825421}
         m_TargetAssemblyTypeName: Fishing, Assembly-CSharp
         m_MethodName: playFishingEvent
@@ -1212,6 +1224,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1230336977}
+        m_TargetAssemblyTypeName: DeactivateButtons, Assembly-CSharp
+        m_MethodName: deactivateActions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1647825424}
         m_TargetAssemblyTypeName: PracticeCrafting, Assembly-CSharp
         m_MethodName: playPracticeCraftEvent
@@ -1476,6 +1500,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1230336977}
+        m_TargetAssemblyTypeName: DeactivateButtons, Assembly-CSharp
+        m_MethodName: deactivateActions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1647825422}
         m_TargetAssemblyTypeName: Exercise, Assembly-CSharp
         m_MethodName: playExerciseEvent
@@ -4574,6 +4610,7 @@ GameObject:
   - component: {fileID: 1230336974}
   - component: {fileID: 1230336975}
   - component: {fileID: 1230336976}
+  - component: {fileID: 1230336977}
   m_Layer: 0
   m_Name: SystemFlagsAndVariables
   m_TagString: Untagged
@@ -4691,6 +4728,39 @@ MonoBehaviour:
   canvas: {fileID: 201954529}
   canvas2: {fileID: 0}
   messageWindow: {fileID: 1582925468}
+--- !u!114 &1230336977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230336968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13b9ba0fc9b3d24f81a3b1725d8dab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionButtons:
+  - {fileID: 531524680}
+  - {fileID: 1328786878}
+  - {fileID: 225868676}
+  - {fileID: 584043631}
+  - {fileID: 960467931}
+  - {fileID: 1863068077}
+  - {fileID: 1235139093}
+  axeButtons:
+  - {fileID: 1922764075}
+  - {fileID: 1261705733}
+  - {fileID: 1002267283}
+  - {fileID: 2065906040}
+  - {fileID: 1386806546}
+  - {fileID: 129628885}
+  - {fileID: 57437455}
+  - {fileID: 1465678701}
+  - {fileID: 834765356}
+  - {fileID: 2115934389}
+  - {fileID: 856078963}
+  - {fileID: 1418695615}
 --- !u!1 &1235139091
 GameObject:
   m_ObjectHideFlags: 0
@@ -4775,6 +4845,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1230336977}
+        m_TargetAssemblyTypeName: DeactivateButtons, Assembly-CSharp
+        m_MethodName: deactivateActions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1647825425}
         m_TargetAssemblyTypeName: CutTree, Assembly-CSharp
         m_MethodName: playCutEvent
@@ -5271,6 +5353,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1230336977}
+        m_TargetAssemblyTypeName: DeactivateButtons, Assembly-CSharp
+        m_MethodName: deactivateActions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1647825418}
         m_TargetAssemblyTypeName: Mining, Assembly-CSharp
         m_MethodName: playMiningEvent
@@ -6049,6 +6143,30 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1230336977}
+        m_TargetAssemblyTypeName: DeactivateButtons, Assembly-CSharp
+        m_MethodName: activateActions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1230336977}
+        m_TargetAssemblyTypeName: DeactivateButtons, Assembly-CSharp
+        m_MethodName: activateAxes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1582925472}
         m_TargetAssemblyTypeName: MessageWindowControl, Assembly-CSharp
         m_MethodName: gameWindowExit
@@ -7366,6 +7484,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1230336977}
+        m_TargetAssemblyTypeName: DeactivateButtons, Assembly-CSharp
+        m_MethodName: deactivateActions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1647825420}
         m_TargetAssemblyTypeName: Rest, Assembly-CSharp
         m_MethodName: playRestEvent
